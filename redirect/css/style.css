@@ -23,7 +23,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20px 0;
-  height: 100%;
+  min-height: 100%;
 }
 
 .logo {
@@ -316,6 +316,7 @@ button:focus:not(:focus-visible) {
 
   .navigation-mobile .navigation-list {
     margin-top: 3rem;
+    margin-left: -10px;
   }
 
   .navigation-item,
@@ -331,5 +332,50 @@ button:focus:not(:focus-visible) {
 
   .logo {
     width: 100%;
+  }
+
+  .btn-rounded {
+    width: 310px;
+  }
+
+  .btn-lg {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  .navigation-item,
+  .navigation-item:hover {
+    width: 90px;
+    height: 90px;
+  }
+
+  .navigation-item a {
+    font-size: 0.5rem;
+    font-weight: 600;
+  }
+
+  .btn-rounded {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  .navigation-item,
+  .navigation-item:hover {
+    width: 80px;
+    height: 80px;
+  }
+
+  .btn-rounded {
+    width: 220px;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+  }
+
+  .navigation-item a {
+    font-size: 0.4rem;
   }
 }
